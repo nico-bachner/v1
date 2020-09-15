@@ -1,6 +1,6 @@
 # Nico Bachner
 
-<a href="https://nicobachner.com"><img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/browser-safari.png" width="30" height="30"></a> <a href="https://dev.to/nicobachner"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Nico Bachner's DEV Profile" height="30" width="30"></a>
+<a href="https://nicob.dev"><img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/browser-safari.png" width="30" height="30"></a> <a href="https://dev.to/nicobachner"><img src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="Nico Bachner's DEV Profile" height="30" width="30"></a>
 
 <table>
 <tr>
