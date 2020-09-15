@@ -1,17 +1,16 @@
 {
     "short_name": "Nico Bachner",
-    "name": "Nico Bachner - Software Developer",
+    "name": "Nico Bachner - Software, Web and Game Developer",
     "description": "Personal Web Page",
     "icons": [
       {
-        "src": "/images/icons-192.png",
-        "type": "image/png",
-        "sizes": "192x192"
+        "src": "/images/favicon/favicon.jpg",
+        "type": "image/jpg",
+        "sizes": "320x320"
       },
       {
-        "src": "/images/icons-512.png",
-        "type": "image/png",
-        "sizes": "512x512"
+        "src": "/images/favicon/favicon.svg",
+        "type": "image/svg"
       }
     ],
     "start_url": "https://nicob.dev",
