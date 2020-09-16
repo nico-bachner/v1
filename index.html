@@ -7,7 +7,6 @@
         <meta name="keywords" content="Nico, Bachner, student, web, game, dev, nico-bachner, developer, open source, open sourcerer">
         <meta name="author" content="Nico Bachner">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="index, follow" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://nicob.dev" />
@@ -15,7 +14,7 @@
         <meta property="og:image" content="images/favicon.png" />
 
         <link rel="manifest" href="manifest.json" />
-        <link rel="icon" type="image/png" href="https://nicob.dev/images/favicon/favicon.png">
+        <link rel="icon" type="image/png" href="https://nicob.dev/images/logo/favicon.png">
         <link rel="canonical" href="https://nicob.dev" />
 
         <title>Nico Bachner</title>
@@ -36,7 +35,7 @@
                 line-height: 1.5;
             }
             main {
-                max-width: 50rem;
+                max-width: 60rem;
                 margin: 0 auto;
             }
             header {
@@ -69,8 +68,23 @@
                 margin: 2rem;
             }
             footer a img {
-                width: 3rem;
-                height: 3rem;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            #uses div {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+                grid-gap: 1rem;
+            }
+            #uses table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                padding: 0.5rem;
+                border: 1px solid #aaaaaa;
+                width: 50%;
             }
         </style>
     </head>
@@ -93,41 +107,67 @@
                     </a>
                 </nav>
             </header>
-            <section>
-                <h2>&#128104; About me</h2>
+            <section id="about">
+                <h2><a href="https://nicob.dev">👨</a> About me</h2>
                 <p>
                     I'm a 🏫 High School Student living in 📍 Luxembourg. 
                     I dabble in 💻 Software Development, especially in 🌐 Web Dev, but I'm also interested in 🎮 Game Dev.
                     I find 🚀 Open Source especially fascinating.
-                    I am also an ⛷ <a href="https://www.fis-ski.com/DB/general/athlete-biography.html?sectorcode=AL&competitorid=238831">Alpine Ski Racer</a>, an avid 🚲 Cyclist / 🚵 Mountainbiker, and a wanna-be 🎮 Gamer & Esports Player.
+                    I am also an ⛷ Alpine Ski Racer, an avid 🚲 Cyclist / 🚵 Mountainbiker, and a wanna-be 🎮 Gamer & Esports Player.
                     I study ♬ Music as well.
                 </p>
             </section>
-            <section>
-                <h2>Projects</h2>
+            <section id="projects">
+                <h2><a href="https://github.com/nico-bachner">🔨</a> Projects</h2>
                 <p>Not much here yet ...</p>
             </section>
             <section id="uses">
-                <h2>Uses</h2>
-                <p>Hardware:
-                    <ul>
-                        <li>Macbook Air</li>
-                    </ul>
-                </p>
-                <p>Software:
-                    <ul>
-                        <li>Homebrew</li>
-                        <li>VSCode</li>
-                        <li>Node.js</li>
-                        <li>Firefox (and Safari)</li>
-                    </ul>
-                </p>
-                <p>Platforms / Services:
-                    <ul>
-                        <li>Github</li>
-                        <li>Vercel</li>
-                    </ul>
-                </p>
+                <h2><a href="https://uses.tech">🤖</a> Uses</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th colspan="2">Hardware</th>
+                        </tr>
+                        <tr>
+                            <td>Computer</td>
+                            <td>Macbook Air</td>
+                        </tr> 
+                    </table>
+                    <table>
+                        <tr>
+                            <th colspan="2">Software</th>
+                        </tr>
+                        <tr>
+                            <td>Package / Application Manager</td>
+                            <td><a href="https://brew.sh">Homebrew</a></td>
+                        </tr>
+                        <tr>
+                            <td>Text Editor</td>
+                            <td><a href="https://code.visualstudio.com">Visual Studio Code</a></td>
+                        </tr>
+                        <tr>
+                            <td>Browser</td> 
+                            <td>Safari & <a href="https://www.mozilla.org/en-US/firefox/developer">Firefox Developer Edition</a></td>
+                        </tr> 
+                        <tr>
+                            <td>Other</td>
+                            <td><a href="https://nodejs.dev">Node.js</a></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <tr>
+                            <th colspan="2">Platforms / Services</th>
+                        </tr>
+                        <tr>
+                            <td>Code Hosting & Sharing</td> 
+                            <td><a href="https://github.com/nico-bachner">Github</a></td>
+                        </tr>
+                        <tr>
+                            <td>CI & Deployment</td>
+                            <td><a href="https://vercel.com">Vercel</a> (formerly Zeit)</td>
+                        </tr>
+                    </table>
+                </div>
             </section>
             <footer>
                 <a href="mailto:yo@nicob.dev">
