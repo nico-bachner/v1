@@ -36,26 +36,26 @@
             }
             main {
                 max-width: 60rem;
-                margin: 0 auto;
+                margin: 6rem auto 0;
             }
             header {
                 text-align: center;
+                line-height: 0.6;
             }
             h1 {
                 font-size: 5rem;
                 color:steelblue;
                 font-weight: normal;
-                margin-bottom: 0;
+
             }
             header p {
                 font-size: 1.2rem;
-                line-height: 0.6;
             }
             nav {
                 width: fit-content;
                 margin: 0 auto;
             }
-            nav a img {
+            a img {
                 width: 2rem;
                 height: 2rem;
                 margin: 0.5rem;
@@ -63,15 +63,6 @@
             section {
                 margin: 2rem;
             }
-            footer {
-                text-align: center;
-                margin: 2rem;
-            }
-            footer a img {
-                width: 2rem;
-                height: 2rem;
-            }
-
             #uses div {
                 display: grid;
                 grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
@@ -85,6 +76,12 @@
                 padding: 0.5rem;
                 border: 1px solid #aaaaaa;
                 width: 50%;
+            }
+            footer {
+                border-top: 1px solid var(--color);
+                text-align: center;
+                padding: 1rem;
+                margin: 4rem 2rem 0;
             }
         </style>
     </head>
@@ -169,11 +166,15 @@
                     </table>
                 </div>
             </section>
-            <footer>
+            <section id="mail">
+                <h2>📝 Contact Me</h2>
+                <p>Hit me up via email by pressing on the mail icon below 😉</p>
                 <a href="mailto:yo@nicob.dev">
                     <img src="images/email.svg" alt="Nico Bachner's Email Address" />
                 </a>
-                <p>Made by me 😁</p>
+            </section>
+            <footer>
+                <p>Made by me 😁 in 2020</p>
             </footer>
         </main>
     </body>
