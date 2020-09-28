@@ -60,12 +60,10 @@
                 line-height: 1.5;
             }
             .dark-mode-button {
-                font-size: xx-large;
-                position: fixed;
-                right: 1rem;
-                bottom: 1rem;
                 background-color: transparent;
-                border: unset;
+                border: none;
+                padding: 0;
+                margin: 0;
             }
             main {
                 max-width: 64rem;
@@ -88,7 +86,7 @@
                 width: fit-content;
                 margin: auto;
             }
-            img {
+            nav a img, nav button img {
                 width: 2rem;
                 height: 2rem;
                 margin: 0.5rem;
@@ -123,7 +121,6 @@
         </script>
     </head>
     <body>
-        <button class="dark-mode-button" onclick="themeToggle()">🌗</button>
         <main>
             <header>
                 <h1>Nico Bachner</h1>
@@ -134,6 +131,9 @@
                     <a target="_blank" rel=”noreferrer” href="https://dev.to/nicob">
                         <img src="images/dev.svg" alt="Nico Bachner's DEV Profile" />
                     </a>
+                    <button class="dark-mode-button" onclick="themeToggle()">
+                        <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/last-quarter-moon-symbol_1f317.png" alt="Quarter Moon - Toggle Dark Mode" />
+                    </button>
                     <a target="_blank" rel=”noreferrer” href="https://stackoverflow.com/users/story/13506524">
                         <img src="images/stackoverflow.svg" alt="Nico Bachner's Stack Overflow profile" />
                     </a>
@@ -222,6 +222,7 @@
                 </p>
             </section>
             <footer>
+                <p>🇩🇪 🇩🇰 🇬🇧 🇱🇺 🇫🇷</p>
                 <p>Made by me 😁 in 2020</p>
             </footer>
         </main>
