@@ -18,9 +18,39 @@
 
         <style>
             :root {
-                --content: #333333;
-                --theme: #ffffff;
                 --highlight: #6666dd;
+            }
+            @media (prefers-color-scheme: light) {
+                html {
+                    --content: #333333;
+                    --theme: #ffffff;
+                }
+                img {
+                    filter: invert(0%);
+                }
+                .dark-mode {
+                    --content: white;
+                    --theme: #000000;
+                }
+                .theme-toggle {
+                    filter: invert(100%);
+                }
+            }
+            @media (prefers-color-scheme: dark) {
+                html {
+                    --content: white;
+                    --theme: #000000;
+                }
+                img {
+                    filter: invert(100%);
+                }
+                .light-mode {
+                    --content: #333333;
+                    --theme: #ffffff;
+                }
+                .theme-toggle {
+                    filter: invert(0%);
+                }
             }
             html {
                 font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -31,18 +61,14 @@
             }
             .dark-mode-button {
                 font-size: xx-large;
-                position: absolute;
+                position: fixed;
                 right: 1rem;
-                top: 1rem;
+                bottom: 1rem;
                 background-color: transparent;
                 border: unset;
             }
-            .dark-mode {
-                --content: #dddddd;
-                --theme: #000000;
-            }
             main {
-                max-width: 62rem;
+                max-width: 64rem;
                 margin: 5rem auto 0;
             }
             a {
@@ -56,17 +82,16 @@
                 line-height: 1;
                 text-align: center;
                 font-size: 4rem;
-                font-weight: normal;
                 margin-bottom: 1.5rem;
             }
             nav {
                 width: fit-content;
                 margin: auto;
             }
-            nav img {
+            img {
                 width: 2rem;
                 height: 2rem;
-                margin: .6rem;
+                margin: 0.5rem;
             }
             #uses div {
                 display: grid;
@@ -78,7 +103,7 @@
                 width: 100%;
             }
             td, th {
-                padding: .4rem;
+                padding: .5rem;
                 border: 1px solid #808080;
                 width: 50%;
             }
@@ -90,28 +115,30 @@
             }
         </style>
         <script>
-            function darkModeToggle() {
+            function themeToggle() {
                 document.documentElement.classList.toggle("dark-mode");
+                document.documentElement.classList.toggle("light-mode");
+                document.images.classList.toggle("theme-toggle");
             }
         </script>
     </head>
     <body>
-        <button class="dark-mode-button" onclick="darkModeToggle()">🌗</button>
+        <button class="dark-mode-button" onclick="themeToggle()">🌗</button>
         <main>
             <header>
-                <h1><a href="https://nicob.dev">Nico Bachner</a></h1>
+                <h1>Nico Bachner</h1>
                 <nav>
                     <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">
-                        <img class="social-icon" src="images/github.svg" alt="Nico Bachner's Github profile" />
+                        <img src="images/github.svg" alt="Nico Bachner's Github profile" />
                     </a>
                     <a target="_blank" rel=”noreferrer” href="https://dev.to/nicob">
-                        <img class="social-icon" src="images/dev.svg" alt="Nico Bachner's DEV Profile" />
+                        <img src="images/dev.svg" alt="Nico Bachner's DEV Profile" />
                     </a>
                     <a target="_blank" rel=”noreferrer” href="https://stackoverflow.com/users/story/13506524">
-                        <img class="social-icon" src="images/stackoverflow.svg" alt="Nico Bachner's Stack Overflow profile" />
+                        <img src="images/stackoverflow.svg" alt="Nico Bachner's Stack Overflow profile" />
                     </a>
                     <a target="_blank" rel=”noreferrer” href="https://code.golf/golfers/nico-bachner">
-                        <img class="social-icon" src="images/codegolf.svg" alt="Nico Bachner's Code Golf profile" />
+                        <img src="images/codegolf.svg" alt="Nico Bachner's Code Golf profile" />
                     </a>
                 </nav>
             </header>
@@ -177,7 +204,7 @@
                             <td><a target="_blank" rel=”noreferrer” href="https://github.com">Github</a></td>
                         </tr>
                         <tr>
-                            <td>CI / CD</td>
+                            <td>CI & Deployment</td>
                             <td><a target="_blank" rel=”noreferrer” href="https://vercel.com">Vercel</a></td>
                         </tr>
                     </table>
@@ -189,7 +216,7 @@
                 <p>
                     Hit me up via ✉️ email at yo@nicob.dev 😉. You can also just 
                     <a href="mailto:yo@nicob.dev?subject=Hi&body=Wassup%20Nico%2C%0D%0AHow%20you%20doin'%3F%0D%0A%0D%0AI%20was%20wondering%20if%20you%20could%20lend%20me%20a%20hand%20with%20an%20open%20source%20project%20of%20mine.%20Here's%20a%20link%20to%20the%20Github%20repo%3A%20https%3A%2F%2Fgithub.com%2Flux-gaming%2Fcodm-lu-bot%0D%0A%0D%0ALook%20forward%20to%20hear%20from%20you.%0D%0A%0D%0APeace%2C%0D%0AJon%20Arbuckle" target="_blank" rel="noopener noreferrer">
-                        press here
+                        press this
                     </a>
                     to save yourself some time.
                 </p>
