@@ -20,18 +20,19 @@
             :root {
                 --content: #333333;
                 --theme: #ffffff;
-                --blue: #5555ff;
-                font-size: large;
+                --highlight: #6666dd;
             }
 
-            body {
+            html {
                 font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 color: var(--content);
                 background-color: var(--theme);
+                font-size: large;
                 line-height: 1.5;
             }
 
             .dark-mode-button {
+                font-size: xx-large;
                 position: absolute;
                 right: 1rem;
                 top: 1rem;
@@ -40,43 +41,43 @@
             }
 
             .dark-mode {
-                filter: invert(100%);
+                --content: #dddddd;
+                --theme: #000000;
             }
 
+            main {
+                max-width: 62rem;
+                margin: 0 auto;
+            }
             a {
                 text-decoration: none;
-                color: var(--blue);
-            }
-            main {
-                max-width: 64rem;
-                margin: 5rem auto 0;
+                color: var(--highlight);
             }
             header {
-                text-align: center;
-                line-height: 1;
+                margin: 5rem 1rem -2rem;
             }
             h1 {
+                text-align: center;
                 font-size: 4rem;
-                color: steelblue;
                 font-weight: normal;
                 margin: 0;
             }
             nav {
                 width: fit-content;
-                margin: 1.5rem auto;
+                margin: auto;
             }
-            section {
-                margin: 2rem;
+            section, footer {
+                margin: 2.5rem 1rem;
             }
             
             .social-icon {
                 width: 2rem;
                 height: 2rem;
-                margin: 0.5rem;
+                margin: .6rem;
             }
             #uses div {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
                 grid-gap: 1rem;
             }
             #uses table {
@@ -84,16 +85,15 @@
                 width: 100%;
             }
             td, th {
-                padding: 0.5rem;
-                border: 1px solid #aaaaaa;
+                padding: .4rem;
+                border: 1px solid #808080;
                 width: 50%;
-                border-radius: 1rem;
             }
             footer {
                 border-top: 1px solid var(--content);
                 text-align: center;
                 padding: 1rem;
-                margin: 4rem 2rem 0;
+                margin-bottom: 0;
             }
         </style>
         <script>
@@ -106,7 +106,7 @@
         <button class="dark-mode-button" onclick="darkModeToggle()">🌗</button>
         <main>
             <header>
-                <h1>Nico Bachner</h1>
+                <h1><a href="https://nicob.dev">Nico Bachner</a></h1>
                 <nav>
                     <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">
                         <img class="social-icon" src="images/github.svg" alt="Nico Bachner's Github profile" />
@@ -123,7 +123,7 @@
                 </nav>
             </header>
             <section id="about">
-                <h2><a href="https://nicob.dev">👨</a> About me</h2>
+                <h2>👨 About me</h2>
                 <p>
                     I'm a 🏫 High School Student living in 📍 Luxembourg. 
                     I dabble in 💻 Software Development, especially in 🌐 Web Dev.
@@ -135,7 +135,7 @@
             </section>
             <section id="projects">
                 <h2>🔨 Projects</h2>
-                <p>All of my projects are stored on <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">GitHub</a></p>
+                <p>All of my projects are on <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">GitHub</a></p>
             </section>
             <section id="uses">
                 <h2>🤖 Uses</h2>
@@ -184,7 +184,7 @@
                             <td><a target="_blank" rel=”noreferrer” href="https://github.com">Github</a></td>
                         </tr>
                         <tr>
-                            <td>Deployment</td>
+                            <td>CI / CD</td>
                             <td><a target="_blank" rel=”noreferrer” href="https://vercel.com">Vercel</a></td>
                         </tr>
                     </table>
