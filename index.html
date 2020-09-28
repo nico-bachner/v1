@@ -23,19 +23,26 @@
                 --blue: #5555ff;
                 font-size: large;
             }
-            @media (prefers-color-scheme: dark) {
-                html {
-                    filter: invert(100%);
-                }
-            }
 
-            html {
+            body {
                 font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 color: var(--content);
                 background-color: var(--theme);
-
                 line-height: 1.5;
             }
+
+            .dark-mode-button {
+                position: absolute;
+                right: 1rem;
+                top: 1rem;
+                background-color: transparent;
+                border: unset;
+            }
+
+            .dark-mode {
+                filter: invert(100%);
+            }
+
             a {
                 text-decoration: none;
                 color: var(--blue);
@@ -89,8 +96,14 @@
                 margin: 4rem 2rem 0;
             }
         </style>
+        <script>
+            function darkModeToggle() {
+                document.documentElement.classList.toggle("dark-mode");
+            }
+        </script>
     </head>
     <body>
+        <button class="dark-mode-button" onclick="darkModeToggle()">🌗</button>
         <main>
             <header>
                 <h1>Nico Bachner</h1>
