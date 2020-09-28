@@ -3,15 +3,12 @@
     <head>
         <meta charset="UTF-8">
 
-        <meta name="description" content="Hi, I'm Nico, a Student in Luxembourg. I'm also a Software, Web and Game Developer and I aspire to become an Open Sourcerer">
+        <meta name="description" content="
+            💻 Developer, 🚀 Open Source enthousiast, and 🏫 High School Student living in 📍 Luxembourg.
+        ">
         <meta name="keywords" content="nico, bachner, student, web, game, dev, nico-bachner, developer, open source, open sourcerer">
         <meta name="author" content="Nico Bachner">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://nicob.dev" />
-        <meta property="og:title" content="Nico Bachner" />
-        <meta property="og:image" content="images/logo/favicon.png" />
 
         <link rel="manifest" href="manifest.json" />
         <link rel="icon" type="image/png" href="https://nicob.dev/images/logo/favicon.png">
@@ -21,47 +18,54 @@
 
         <style>
             :root {
-                --color: #333333;
+                --content: #333333;
+                --theme: #ffffff;
+                --blue: #5555ff;
+                font-size: large;
             }
-
-            a {
-                text-decoration: none;
+            @media (prefers-color-scheme: dark) {
+                html {
+                    filter: invert(100%);
+                }
             }
 
             html {
                 font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: var(--color);
-                background-color: white;
+                color: var(--content);
+                background-color: var(--theme);
+
                 line-height: 1.5;
+            }
+            a {
+                text-decoration: none;
+                color: var(--blue);
             }
             main {
                 max-width: 64rem;
-                margin: 0 auto;
+                margin: 5rem auto 0;
             }
             header {
                 text-align: center;
                 line-height: 1;
             }
             h1 {
-                font-size: 5rem;
-                color:steelblue;
+                font-size: 4rem;
+                color: steelblue;
                 font-weight: normal;
-                margin-bottom: 2rem;
-            }
-            header p {
-                font-size: 1.2rem;
+                margin: 0;
             }
             nav {
                 width: fit-content;
-                margin: 0 auto;
-            }
-            a img {
-                width: 2rem;
-                height: 2rem;
-                margin: 0.5rem;
+                margin: 1.5rem auto;
             }
             section {
                 margin: 2rem;
+            }
+            
+            .social-icon {
+                width: 2rem;
+                height: 2rem;
+                margin: 0.5rem;
             }
             #uses div {
                 display: grid;
@@ -79,7 +83,7 @@
                 border-radius: 1rem;
             }
             footer {
-                border-top: 1px solid var(--color);
+                border-top: 1px solid var(--content);
                 text-align: center;
                 padding: 1rem;
                 margin: 4rem 2rem 0;
@@ -92,16 +96,16 @@
                 <h1>Nico Bachner</h1>
                 <nav>
                     <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">
-                        <img src="images/github.svg" alt="Nico Bachner's Github profile" />
+                        <img class="social-icon" src="images/github.svg" alt="Nico Bachner's Github profile" />
                     </a>
                     <a target="_blank" rel=”noreferrer” href="https://dev.to/nicob">
-                        <img src="images/dev.svg" alt="Nico Bachner's DEV Profile" />
+                        <img class="social-icon" src="images/dev.svg" alt="Nico Bachner's DEV Profile" />
                     </a>
                     <a target="_blank" rel=”noreferrer” href="https://stackoverflow.com/users/story/13506524">
-                        <img src="images/stackoverflow.svg" alt="Nico Bachner's Stack Overflow profile" />
+                        <img class="social-icon" src="images/stackoverflow.svg" alt="Nico Bachner's Stack Overflow profile" />
                     </a>
                     <a target="_blank" rel=”noreferrer” href="https://code.golf/golfers/nico-bachner">
-                        <img src="images/codegolf.png" alt="Nico Bachner's Code Golf profile" />
+                        <img class="social-icon" src="images/codegolf.svg" alt="Nico Bachner's Code Golf profile" />
                     </a>
                 </nav>
             </header>
