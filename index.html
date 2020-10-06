@@ -3,84 +3,26 @@
     <head>
         <meta charset="UTF-8">
 
-        <meta name="description" content="
-            💻 Developer, 🚀 Open Source enthousiast, and 🏫 High School Student living in 📍 Luxembourg.
-        ">
+        <meta name="description" content="💻 Developer, 🚀 Open Source enthousiast, and 🏫 High School Student living in 📍 Luxembourg.">
         <meta name="keywords" content="nico, bachner, student, web, game, dev, nico-bachner, developer, open source, open sourcerer">
         <meta name="author" content="Nico Bachner">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="manifest" href="manifest.json" />
-        <link rel="icon" type="image/png" href="https://nicob.dev/images/logo/favicon.png">
+        <link rel="icon" type="image/png" href="images/logo/favicon.png">
         <link rel="canonical" href="https://nicob.dev" />
 
         <title>Nico Bachner</title>
 
+        <link rel="stylesheet" href="styles/darkmode.css">
+        <link rel="stylesheet" href="styles/global.css">
+
         <style>
-            :root {
-                --highlight: #6666dd;
-            }
-            @media (prefers-color-scheme: light) {
-                html {
-                    --content: #333333;
-                    --theme: #ffffff;
-                }
-                img {
-                    filter: invert(0%);
-                }
-                .dark-mode {
-                    --content: white;
-                    --theme: #000000;
-                }
-                .theme-toggle {
-                    filter: invert(100%);
-                }
-            }
-            @media (prefers-color-scheme: dark) {
-                html {
-                    --content: white;
-                    --theme: #000000;
-                }
-                img {
-                    filter: invert(100%);
-                }
-                .light-mode {
-                    --content: #333333;
-                    --theme: #ffffff;
-                }
-                .theme-toggle {
-                    filter: invert(0%);
-                }
-            }
-            html {
-                font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: var(--content);
-                background-color: var(--theme);
-                font-size: large;
-                line-height: 1.5;
-            }
-            .dark-mode-button {
-                background-color: transparent;
-                border: none;
-                padding: 0;
-                margin: 0;
-            }
-            main {
-                max-width: 64rem;
-                margin: 5rem auto 0;
-            }
-            a {
-                text-decoration: none;
-                color: var(--highlight);
-            }
-            header, section, footer {
-                margin: 2.5rem 1rem;
-            }
             h1 {
                 line-height: 1;
                 text-align: center;
                 font-size: 4rem;
-                margin-bottom: 1.5rem;
+                margin-bottom: 1rem;
             }
             nav {
                 width: fit-content;
@@ -91,138 +33,62 @@
                 height: 2rem;
                 margin: 0.5rem;
             }
-            #uses div {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
-                grid-gap: 1rem;
-            }
-            #uses table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-            td, th {
-                padding: .5rem;
-                border: 1px solid #808080;
-                width: 50%;
-            }
-            footer {
-                border-top: 1px solid var(--content);
-                text-align: center;
-                padding: 1rem;
-                margin-bottom: 0;
+            main {
+                max-width: 54rem;
+                margin: auto;
             }
         </style>
-        <script>
-            function themeToggle() {
-                document.documentElement.classList.toggle("dark-mode");
-                document.documentElement.classList.toggle("light-mode");
-                document.images.classList.toggle("theme-toggle");
-            }
-        </script>
     </head>
     <body>
+        <header>
+            <h1>Nico Bachner</h1>
+            <nav>
+                <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">
+                    <img src="images/github.svg" alt="Nico Bachner's Github profile" />
+                </a>
+                <a target="_blank" rel=”noreferrer” href="https://dev.to/nicob">
+                    <img src="images/dev.svg" alt="Nico Bachner's DEV Profile" />
+                </a>
+                <a target="_blank" rel=”noreferrer” href="https://stackoverflow.com/users/story/13506524">
+                    <img src="images/stackoverflow.svg" alt="Nico Bachner's Stack Overflow profile" />
+                </a>
+                <a target="_blank" rel=”noreferrer” href="https://code.golf/golfers/nico-bachner">
+                    <img src="images/codegolf.svg" alt="Nico Bachner's Code Golf profile" />
+                </a>
+            </nav>
+        </header>
         <main>
-            <header>
-                <h1>Nico Bachner</h1>
-                <nav>
-                    <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">
-                        <img src="images/github.svg" alt="Nico Bachner's Github profile" />
-                    </a>
-                    <a target="_blank" rel=”noreferrer” href="https://dev.to/nicob">
-                        <img src="images/dev.svg" alt="Nico Bachner's DEV Profile" />
-                    </a>
-                    <button class="dark-mode-button" onclick="themeToggle()">
-                        <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/237/last-quarter-moon-symbol_1f317.png" alt="Quarter Moon - Toggle Dark Mode" />
-                    </button>
-                    <a target="_blank" rel=”noreferrer” href="https://stackoverflow.com/users/story/13506524">
-                        <img src="images/stackoverflow.svg" alt="Nico Bachner's Stack Overflow profile" />
-                    </a>
-                    <a target="_blank" rel=”noreferrer” href="https://code.golf/golfers/nico-bachner">
-                        <img src="images/codegolf.svg" alt="Nico Bachner's Code Golf profile" />
-                    </a>
-                </nav>
-            </header>
             <section id="about">
                 <h2>👨 About me</h2>
                 <p>
                     I'm a 🏫 High School Student living in 📍 Luxembourg. 
+                    I find 🚀 Open Source extremely fascinating, especially FOSS (Free Open Source Software).
                     I dabble in 💻 Software Development, especially in 🌐 Web Dev.
-                    I find 🚀 Open Source especially fascinating.
                     I'm also interested in 🎮 Game Dev, as well as 🖥️ Esports & 🎮 Gaming in general.
-                    I'm an 🎿 Alpine Ski Racer, an avid 🚵‍♂️ Mountainbiker and everyday 🚴‍♂️ Cyclist.
+                    I'm an 🎿 Alpine Ski Racer, avid 🚵‍♂️ Mountainbiker and everyday 🚴‍♂️ Cyclist.
                     I love ♬ Music as well: I'm a 🥁 Percussionist, can find my way about a 🎹 piano, and have also studied 🎼 Composing.
                 </p>
             </section>
             <section id="projects">
                 <h2>🔨 Projects</h2>
-                <p>All of my projects are on <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">GitHub</a></p>
+                <p>
+                    All of my projects are on <a target="_blank" rel=”noreferrer” href="https://github.com/nico-bachner">GitHub</a>
+                </p>
             </section>
             <section id="uses">
                 <h2>🤖 Uses</h2>
-                <div>
-                    <table>
-                        <tr>
-                            <th colspan="2">Hardware</th>
-                        </tr>
-                        <tr>
-                            <td>Laptop</td>
-                            <td>2020 Intel Macbook Air</td>
-                        </tr> 
-                    </table>
-                    <table>
-                        <tr>
-                            <th colspan="2">Software</th>
-                        </tr>
-                        <tr>
-                            <td>Package Manager</td>
-                            <td><a target="_blank" rel=”noreferrer” href="https://brew.sh">Homebrew</a></td>
-                        </tr>
-                        <tr>
-                            <td>Version Control</td>
-                            <td><a target="_blank" rel=”noreferrer” href="https://git-scm.com/">Git</a></td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <th colspan="2">Applications</th>
-                        </tr>
-                        <tr>
-                            <td>Text Editor</td>
-                            <td><a target="_blank" rel=”noreferrer” href="https://code.visualstudio.com">Visual Studio Code</a></td>
-                        </tr>
-                        <tr>
-                            <td>Browsers</td> 
-                            <td>Safari & Firefox</td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <th colspan="2">Platforms / Services</th>
-                        </tr>
-                        <tr>
-                            <td>Code Hosting & Sharing</td> 
-                            <td><a target="_blank" rel=”noreferrer” href="https://github.com">Github</a></td>
-                        </tr>
-                        <tr>
-                            <td>CI & Deployment</td>
-                            <td><a target="_blank" rel=”noreferrer” href="https://vercel.com">Vercel</a></td>
-                        </tr>
-                    </table>
-                </div>
-                <p>Also check out Wes Bos' <a target="_blank" rel=”noreferrer” href="https://uses.tech">uses.tech</a>, a database of developers' technology preferences</p>
+                <p>
+                    Check out my uses <a href="uses/index.html" target="_blank" rel="noopener noreferrer">here</a> and/or on Wes Bos' <a target="_blank" rel=”noreferrer” href="https://uses.tech">uses.tech</a>.
+                </p>
             </section>
             <section id="mail">
                 <h2>📝 Contact Me</h2>
                 <p>
-                    Hit me up via ✉️ email at yo@nicob.dev 😉. You can also just 
-                    <a href="mailto:yo@nicob.dev?subject=Hi&body=Wassup%20Nico%2C%0D%0AHow%20you%20doin'%3F%0D%0A%0D%0AI%20was%20wondering%20if%20you%20could%20lend%20me%20a%20hand%20with%20an%20open%20source%20project%20of%20mine.%20Here's%20a%20link%20to%20the%20Github%20repo%3A%20https%3A%2F%2Fgithub.com%2Flux-gaming%2Fcodm-lu-bot%0D%0A%0D%0ALook%20forward%20to%20hear%20from%20you.%0D%0A%0D%0APeace%2C%0D%0AJon%20Arbuckle" target="_blank" rel="noopener noreferrer">
-                        press this
-                    </a>
-                    to save yourself some time.
+                    Hit me up via ✉️ email at <a href="mailto:yo@nicob.dev" target="_blank" rel="noopener noreferrer">yo@nicob.dev</a> 😉.
                 </p>
             </section>
+            <hr>
             <footer>
-                <p>🇩🇪 🇩🇰 🇬🇧 🇱🇺 🇫🇷</p>
                 <p>Made by me 😁 in 2020</p>
             </footer>
         </main>
