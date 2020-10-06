@@ -11,13 +11,17 @@ section, footer {
     line-height: 1.5;
 }
 section {
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 footer {
     text-align: center;
     margin: 2rem;
 }
 
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
 a {
     text-decoration: none;
     color: var(--highlight);
