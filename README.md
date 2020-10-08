@@ -15,18 +15,18 @@
 
 <table>
 <tr>
-    <td>:school_satchel: Student</td>
+    <td>:school_satchel: High School Student</td>
     <td>:round_pushpin: Living in Luxembourg</td>
     <td>:earth_africa: World Citizen</td>
 </tr>
 <tr>
-    <td>:computer: Aspiring Open Sourcerer</td>
+    <td>:computer: Open Source Enthusiast</td>
     <td>:globe_with_meridians: Web Dev</td>
     <td>:video_game: Game Dev</td>
 </tr>
 <tr>
     <td>:ski: Alpine Ski Racer</td>
-    <td>:video_game: Amateur Esports Player</td>
+    <td>:video_game: Wanna-be Gamer</td>
     <td>:mountain_bicyclist: Mountainbiker</td>
 </tr>
 </table>
