@@ -11,7 +11,7 @@
         --theme: #000000;
         --highlight: #dd6666;
     }
-    img{
+    img {
         filter: invert(100%);
     }
 }
