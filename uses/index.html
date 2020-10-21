@@ -14,20 +14,20 @@
 
         <title>Nico Bachner</title>
 
-        <link rel="stylesheet" type="text/css" href="../styles/darkmode.css">
         <link rel="stylesheet" type="text/css" href="../styles/global.css">
+        <link rel="stylesheet" type="text/css" href="../styles/darkmode.css">
 
         <style>
             main {
                 display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
                 grid-gap: 2rem;
             }
             table {
                 border-collapse: collapse;
                 width: 100%;
             }
-            td, th {
+            td {
                 padding: .8rem;
                 border: 1px solid #808080;
                 width: 50%;
@@ -39,122 +39,127 @@
             <h1><a href="https://nicob.dev">Nico</a> uses</h1>
         </header>
         <main>
-            <table>
-                <tr>
-                    <th colspan="2">Languages</th>
-                </tr>
-                <tr>
-                    <td>Programming</td> 
-                    <td>
-                        JavaScript
-                        <br>
-                        Python
-                        <br>
-                        Shell
-                    </td>
-                </tr>
-                <tr>
-                    <td>Markup</td> 
-                    <td>
-                        Markdown
-                        <br>
-                        HTML
-                        <br>
-                        (La)TeX
-                    </td>
-                </tr>
-                <tr>
-                    <td>"Real" Languages</td>
-                    <td>
-                        English
-                        <br>
-                        German
-                        <br>
-                        French
-                        <br>
-                        Danish
-                        <br>
-                        Luxembourgish
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th colspan="2">Fundamental Software</th>
-                </tr>
-                <tr>
-                    <td>Operating System</td>
-                    <td>MacOS</td>
-                </tr>
-                <tr>
-                    <td>Package & Application Manager</td>
-                    <td><a target="_blank" rel=”noreferrer” href="https://brew.sh">Homebrew</a></td>
-                </tr>
-                <tr>
-                    <td>Version Control</td>
-                    <td><a target="_blank" rel=”noreferrer” href="https://git-scm.com/">Git</a></td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th colspan="2">Services</th>
-                </tr>
-                <tr>
-                    <td>Code Hosting</td> 
-                    <td><a target="_blank" rel=”noreferrer” href="https://github.com">Github</a></td>
-                </tr>
-                <tr>
-                    <td>Continuous Deployment</td>
-                    <td>
-                        <a href="https://netlify.com" target="_blank" rel="noreferrer">Netlify</a>
-                        <br>
-                        <a target="_blank" rel=”noreferrer” href="https://vercel.com">Vercel</a>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th colspan="2">Open Source</th>
-                </tr>
-                <tr>
-                    <td>Collaboration</td> 
-                    <td><a target="_blank" rel=”noreferrer” href="https://github.com">Github</a></td>
-                </tr>
-                <tr>
-                    <td>Licenses</td> 
-                    <td>
-                        <a target="_blank" rel=”noreferrer” href="https://opensource.org/licenses/MIT">MIT</a>
-                        <br>
-                        <a target="_blank" rel=”noreferrer” href="https://unlicense.org">Unlicense</a>
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th colspan="2">Applications</th>
-                </tr>
-                <tr>
-                    <td>Text Editor</td>
-                    <td><a target="_blank" rel=”noreferrer” href="https://code.visualstudio.com">Visual Studio Code</a></td>
-                </tr>
-                <tr>
-                    <td>Browsers</td> 
-                    <td>
-                        Safari
-                        <br>
-                        Firefox
-                    </td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <th colspan="2">Hardware</th>
-                </tr>
-                <tr>
-                    <td>Laptop</td>
-                    <td>Macbook Air (Intel)</td>
-                </tr> 
-            </table>
+            <section id="languages">
+                <h2>Languages</h2>
+                <table>
+                    <tr>
+                        <td>Programming Languages</td> 
+                        <td>
+                            JavaScript
+                            <br>
+                            Python
+                            <br>
+                            Shell
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Markup Languages</td> 
+                        <td>
+                            Markdown
+                            <br>
+                            HTML
+                            <br>
+                            (La)TeX
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>"Real" Languages</td>
+                        <td>
+                            English
+                            <br>
+                            German
+                            <br>
+                            French
+                            <br>
+                            Danish
+                            <br>
+                            Luxembourgish
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section id="software">
+                <h2>Fundamental Software</h2>
+                <table>
+                    <tr>
+                        <td>Operating System</td>
+                        <td>MacOS</td>
+                    </tr>
+                    <tr>
+                        <td>Package & Application Manager</td>
+                        <td><a target="_blank" rel=”noreferrer” href="https://brew.sh">Homebrew</a></td>
+                    </tr>
+                    <tr>
+                        <td>Version Control</td>
+                        <td><a target="_blank" rel=”noreferrer” href="https://git-scm.com/">Git</a></td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Services</h2>
+                <table>
+                    <tr>
+                        <td>Code Hosting</td> 
+                        <td><a target="_blank" rel=”noreferrer” href="https://github.com">Github</a></td>
+                    </tr>
+                    <tr>
+                        <td>Continuous Deployment</td>
+                        <td>
+                            <a href="https://netlify.com" target="_blank" rel="noreferrer">Netlify</a>
+                            <br>
+                            <a target="_blank" rel=”noreferrer” href="https://vercel.com">Vercel</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Applications</h2>
+                <table>
+                    <tr>
+                        <td>Text Editor</td>
+                        <td><a target="_blank" rel=”noreferrer” href="https://code.visualstudio.com">Visual Studio Code</a></td>
+                    </tr>
+                    <tr>
+                        <td>Browsers</td> 
+                        <td>
+                            Safari
+                            <br>
+                            Firefox
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            
+            <section>
+                <h2>Open Source</h2>
+                <table>
+                    <tr>
+                        <td>Collaboration</td> 
+                        <td><a target="_blank" rel=”noreferrer” href="https://github.com">Github</a></td>
+                    </tr>
+                    <tr>
+                        <td>Licenses</td> 
+                        <td>
+                            <a target="_blank" rel=”noreferrer” href="https://opensource.org/licenses/MIT">MIT</a>
+                            <br>
+                            <a target="_blank" rel=”noreferrer” href="https://unlicense.org">Unlicense</a>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2>Hardware</h2>
+                <table>
+                    <tr>
+                        <td>Laptop</td>
+                        <td>2020 Macbook Air (Intel)</td>
+                    </tr> 
+                </table>
+            </section>
         </main>
     </body>
 </html>

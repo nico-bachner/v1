@@ -1,15 +1,7 @@
-@media (prefers-color-scheme: light) {
-    html {
-        --content: #333333;
-        --theme: #ffffff;
-        --highlight: #6666dd;
-    }
-}
 @media (prefers-color-scheme: dark) {
     html {
-        --content: white;
-        --theme: #000000;
-        --highlight: #dd6666;
+        color: white;
+        background-color: #000000;
     }
     img {
         filter: invert(100%);
