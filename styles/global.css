@@ -1,15 +1,15 @@
+@import 'darkmode.css';
+
 html {
     font-family: -apple-system, Roboto, 'Open Sans', sans-serif;
     font-size: large;
-
     line-height: 1.5;
-    
-    max-width: 54rem;
-    margin: auto;
 }
 
 body {
-    margin: 2rem;
+    margin: calc(25vw - 4rem);
+    margin-top: 5vw;
+    margin-bottom: 2rem;
 }
 
 a {
@@ -20,4 +20,5 @@ a {
 h1 {
     text-align: center;
     line-height: 1;
+    font-size: 4rem;
 }

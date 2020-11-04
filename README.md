@@ -26,7 +26,7 @@
 </tr>
 <tr>
     <td>:ski: Alpine Ski Racer</td>
-    <td>:video_game: Wanna-be Gamer</td>
-    <td>:mountain_bicyclist: Mountainbiker</td>
+    <td>:musical_score: Musician</td>
+    <td>:mountain_bicyclist: Mountain Biker</td>
 </tr>
 </table>
