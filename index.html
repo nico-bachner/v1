@@ -10,16 +10,52 @@
         <meta name="theme-color" content="#ffffff">
 
         <link rel="canonical" href="https://nicob.dev">
-        <link rel="manifest" href="manifest.json">
 
         <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16x16.png">
         <link rel="shortcut icon" href="images/logo/favicon.ico">
-        <link rel="mask-icon" href="images/logo/safari-pinned-tab.svg" color="#007fff">
+        <link rel="icon" href="images/logo/logo.svg">
         <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
 
         <link rel="stylesheet" href="styles/global.css">
         <style>
+            @media (prefers-color-scheme: light) {
+                html {
+                    color: #222222;
+                    background-color: #ffffff;
+                }
+            }
+            @media (prefers-color-scheme: dark) {
+                html {
+                    color: #dddddd;
+                    background-color: #000000;
+                }
+                img {
+                    filter: invert(100%);
+                }
+            }
+
+            html {
+                font-family: -apple-system, Roboto, 'Open Sans', sans-serif;
+                font-size: large;
+                line-height: 1.5;
+                text-align: justify;
+            }
+            body {
+                margin: calc(33.5vw - 5rem);
+                margin-top: 5vw;
+                margin-bottom: 2rem;
+            }
+            a {
+                text-decoration: none;
+                color: #6666dd;
+            }
+            h1 {
+                text-align: center;
+                line-height: 1;
+                font-size: 4rem;
+            }
+
             .external-links {
                 width: -moz-fit-content;
                 width: fit-content;
@@ -63,12 +99,17 @@
                 <h2>👨 About me</h2>
                 <p>
                     I'm a 🏫 High School Student living in 📍 Luxembourg.
+                </p>
+                <p>
+                    I dabble in 💻 Software Development, especially in developing for the 🌐 Web, but I am also interested in 🎮 Game Dev. 
                     <br>
-                    I dabble in 💻 Software Development, especially in developing for the 🌐 Web, but I am also interested in 🎮 Game Dev.
-                    I aspire to become ever more involved in the world of 🚀 Open Source that I am so in awe of.
-                    <br>
+                    I aspire to become ever more involved in the world of 🚀 Open Source, of which I am so in awe. 
+                </p>
+                <p>
                     I'm also an 🎿 Alpine Ski Racer, avid 🚵‍♂️ Mountain Biker and everyday 🚴‍♂️ Cyclist.
-                    I'm fascinated by ♬ Music: I'm a 🥁 Percussionist, have studied 🎼 Musical Theory and some Composition, and can find my way about a 🎹 piano.
+                </p>
+                <p>
+                    I am fascinated by ♬ Music. I'm a 🥁 Percussionist, have studied 🎼 Musical Theory and some Composition, and can find my way about a 🎹 piano.
                 </p>
             </section>
             <section id="projects">
@@ -98,13 +139,13 @@
             <section id="uses">
                 <h2>🤖 Uses</h2>
                 <p>
-                    If you're interested, check out <a href="uses" target="_blank" rel="noopener noreferrer">my uses</a>, as well as <a target="_blank" rel=”noreferrer” href="https://uses.tech">uses.tech</a>.
+                    If you're interested, check out <a href="uses.nicob.dev" target="_blank" rel="noopener noreferrer">my uses</a>, as well as <a target="_blank" rel=”noreferrer” href="https://uses.tech">uses.tech</a>.
                 </p>
             </section>
             <section id="mail">
                 <h2>📝 Contact Me</h2>
                 <p>
-                    Hit me up via ✉️ email at <a href="mailto:yo@nicob.dev" target="_blank" rel="noopener noreferrer">yo@nicob.dev</a> 😉.
+                    Send me an ✉️ email at <a href="mailto:yo@nicob.dev" target="_blank" rel="noopener noreferrer">yo@nicob.dev</a> 😉.
                 </p>
             </section>
         </main>
