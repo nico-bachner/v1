@@ -11,7 +11,5 @@
     <img src="images/codegolf.svg" alt="Nico Bachner's Code Golf profile" width="30" height="30" />
 </a>
 
----
-
 ![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nico-bachner&layout=compact)
 ![Trophies](https://github-profile-trophy.vercel.app/?username=nico-bachner&theme=gruvbox&margin-w=10&rank=S,AAA,AA,A)
