@@ -1,5 +1,3 @@
-# Nico Bachner
-
 <a href="https://nicob.dev">
     <img src="https://uxwing.com/wp-content/themes/uxwing/download/10-brands-and-social-media/browser-safari.png" width="30" height="30">
 </a>
@@ -13,20 +11,7 @@
     <img src="images/codegolf.svg" alt="Nico Bachner's Code Golf profile" width="30" height="30" />
 </a>
 
-<table>
-<tr>
-    <td>:school_satchel: High School Student</td>
-    <td>:round_pushpin: Living in Luxembourg</td>
-    <td>:earth_africa: World Citizen</td>
-</tr>
-<tr>
-    <td>:computer: Open Source Enthusiast</td>
-    <td>:globe_with_meridians: Web Dev</td>
-    <td>:video_game: Game Dev</td>
-</tr>
-<tr>
-    <td>:ski: Alpine Ski Racer</td>
-    <td>:musical_score: Musician</td>
-    <td>:mountain_bicyclist: Mountain Biker</td>
-</tr>
-</table>
+---
+
+![languages](https://github-readme-stats.vercel.app/api/top-langs/?username=nico-bachner&layout=compact)
+![Trophies](https://github-profile-trophy.vercel.app/?username=nico-bachner&theme=gruvbox&margin-w=10&rank=S,AAA,AA,A)
